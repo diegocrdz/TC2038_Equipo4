@@ -1,0 +1,93 @@
+Tecnológico de Monterrey, Campus Santa Fe
+
+Análisis y diseño de algoritmos avanzados (Gpo 602)
+
+E1. Actividad Integradora 1
+
+Equipo:
+- Aquiba Yudah Benarroch Bittán, A01783710
+- Diego Córdova Rodríguez, A01781166
+- Lorena Estefanía Chewtat Torres, A01785378
+
+Fecha de entrega:
+23 de octubre de 2025
+
+Contribuciones del Equipo
+
+Aquiba Yudah Benarroch Bittán, A01783710
+
+- Codificación de los algoritmos Manacher, z-function y suffix-array.
+
+    En ambos casos ayude con el pseudocódigo y codificación de los algoritmos para 
+    adaptarlos en la evidencia.
+
+- Investigación de complejidad:
+
+    Realicé la investigación de complejidad para el algoritmo suffix array. Asimismo,
+    realicé la debida referencia y cita de la información en formato APA 7.
+
+- Pruebas de ejecución y archivos de pruebas:
+    
+    Junto con Lorena y Diego, realizamos diferentes archivos de prueba para verificar
+    el correcto funcionamiento del código. Para ello, insertamos diferentes patrones de
+    archivos maliciosos.
+
+Diego Córdova Rodríguez, A01781166
+
+- Codificación de algoritmos Z-Function, Manacher y arreglo de sufijos
+
+    Contrbuí en el pseudocódigo y codificación de todos los algoritmos de la evidencia.
+    Además, ayudé a adaptar los códigos para que dieran solución al problema planteado
+    por la evidencia, ya que en un inicio codificamos estos algoritmos de manera individual.
+
+- Investigación de complejidad
+
+    Realicé la investigación de complejidad para los algoritmos Z-Function y Manacher.
+    De igual forma, realicé la debida referencia y cita de la información en formato
+    APA 7.
+
+- Pruebas de ejecución y archivos de pruebas
+
+    Junto con Lorena y Aquiba, realicé archivos de prueba para probar la funcionalidad 
+    del código. Para esto, probamos insertar diferentes patrones de archivos maliciosos
+    (mcode1, 2 y 3) para los archvios de transmisión (transmission1 y 2).
+
+    En uno de los casos, me dí cuenta que los índices que estabamos imprimiendo para los
+    algoritmos eran incorrectos, ya que imprimíamos considerando el índice inicial de las
+    cadenas de texto en 0, por lo que lo corregí para considerarlos desde 1.
+
+Lorena Estefanía Chewtat Torres, A01785378
+
+- Codificación de algoritmos Z-Function, Manacher y arreglo de sufijos
+
+    Apoyé en la elaboración del pseudocódigo y la implementación de los algoritmos Z-Function,
+    Manacher y Suffix Array, los cuales desarrollamos en clase de manera colaborativa. Además, 
+    participé en la adaptación del código para resolver los problemas planteados en la evidencia, 
+    realizando conexiones entre las funciones de los algoritmos y ajustando variables o entradas 
+    cuando fue necesario para asegurar su correcto funcionamiento.
+
+-Investigación de complejidad
+
+    Realicé la investigación de complejidad para el algoritmo de suffix array junto con Aquiba. 
+    Se discutió y decidimos utilizar mejor una cita que él había encontrado posteriormente. 
+
+- Pruebas de ejecución y archivos de pruebas
+
+    En colaboración con Aquiba y Diego, generamos diversos archivos de prueba con el fin de comprobar 
+    el correcto funcionamiento de los algoritmos. Insertamos diferentes patrones de archivos maliciosos 
+    para evaluar los casos límite y posibles errores. Durante este proceso, identificamos y corregimos 
+    fallos hasta lograr que el programa funcionara adecuadamente en todos los escenarios evaluados.
+
+Referencias
+
+Fischer, J., Sanders, P. (2013). Combinatorial Pattern Matching, CPM 2013, Bad Herrenalb, Alemania.
+Proceedings. Springer. https://doi.org/10.1007/978-3-642-38905-4
+
+Gusfield, D. (s.f.). Algorithms on Strings, Trees and Sequences: Computer Science and 
+Computational Biology. Univsersidad de California, Davis. 
+https://doc.lagout.org/science/0_Computer%20Science/2_Algorithms/Algorithms%20on%20Strings%2C%20Trees%2C%20and%20Sequences%20%5BGusfield%201997-05-28%5D.pdf
+
+Manacher, G. (1975). A new linear-time “on-line” algorithm for finding the smallest initial 
+palindrome of a string. Journal of the ACM, 22(3), 346–351.
+https://doi.org/10.1145/321892.321896
+
