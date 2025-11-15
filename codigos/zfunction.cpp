@@ -20,7 +20,7 @@ void zfunction(string s, string p) {
         j = j_temp;
         repeticiones = 0;
 
-        // 
+        // Cuenta repeticiones mientras los caracteres coincidan
         while (j < s_temp.size() && s_temp[i] == s_temp[j]) {
             i++;
             j++;
@@ -57,8 +57,7 @@ void zfunction(string s, string p) {
 }
 
 int main() {
-    //zfunction("XABCABXABCABCX", "ABCABC");
-    zfunction("XABCABXABCABCXABCABC", "ABCABC");
+    zfunction("ABABCABCABABABD", "ABCABC");
     //zfunction("ABABCABCABABABD", "ABABD");
     return 0;
 }

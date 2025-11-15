@@ -1,7 +1,11 @@
 # Executables
+a.out
 *.out
+*.exe
+*.o
 
 # VisualStudioCode
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

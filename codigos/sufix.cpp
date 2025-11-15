@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void sufix(string s) {
+vector<pair<string, int>> sufix(string s) {
 
     // Variables para los sufijos
     vector<pair<string, int>> sufijos; // par<sufijo, índice>
@@ -20,19 +20,18 @@ void sufix(string s) {
     ord = sufijos;
     sort(ord.begin(), ord.end());
 
-    cout << "Sufijos del string: " << endl;
-    for(int j = 0; j < sufijos.size() ; j++) {
-        cout << "[" << sufijos[j].second << "]" << sufijos[j].first << endl;
-    }
-
-    cout << "Sufijos ordenados : " << endl;
-    for(int j = 0; j < ord.size() ; j++) {
-        cout << "[" << ord[j].second << "]" << ord[j].first << endl;
-    }
+    // Regresar sufijos ordenados
+    return ord;
 }
 
 int main(){
     string s = "ababcabcabababd$";
-    sufix(s);
+    vector<pair<string, int>> res = sufix(s);
+
+    // Imprimir sufijos ordenados
+    for (int i = 0; i < res.size(); i++) {
+        cout << "[" << res[i].second << "] " << res[i].first<< endl;
+    }
+    
     return 0;
 }
