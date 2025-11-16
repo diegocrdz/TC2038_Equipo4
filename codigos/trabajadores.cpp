@@ -4,6 +4,18 @@
 
 using namespace std;
 
+/*
+Algoritmo del problema de asignación de trabajos con Branch and Bound
+Equipo:
+- Aquiba Yudah Benarroch Bittán, A01783710
+- Diego Córdova Rodríguez, A01781166
+- Lorena Estefanía Chewtat Torres, A01785378
+*/
+
+/*
+Función recursiva del problema de asignación para explorar vecinos con branch and bound
+Explora las ramas e ignora las que no cumplan con el mejor costo que se ha encontrado
+*/
 void explorarVecinos(
     vector<vector<int>> &tabla,
     vector<bool> &trabajoAsignado,
@@ -51,8 +63,20 @@ void explorarVecinos(
     }
 }
 
-// Funcion para optimizar el costo de trabajos asignados
-void optimizacion(vector<vector<int>> tabla, vector<int> orden) {
+/*
+Función principal del problema de asignación de trabajos
+
+De acuerdo a una tabla de costos y un orden de asignación, asigna trabajos a trabajadores
+con el menor costo posible
+
+Entrada:
+- tabla: matriz de costos
+- orden: orden en el que se asignarán los trabajos
+
+Salida:
+- Imprime la mejor asignación de trabajos y su costo total
+*/
+void asignarTrabajos(vector<vector<int>> tabla, vector<int> orden) {
     int n = tabla.size();
     vector<bool> trabajoAsignado(n, false); // Para saber si el trabajo ya fue asignado
     vector<int> stack(n, -1); // Guarda el trabajo de cada trabajador
@@ -74,7 +98,6 @@ int main () {
 
     // Matriz de trabajos con costos
     // Filas son trabajadores, columnas trabajos
-    
     vector<vector<int>> tabla = {
         {5, 9, 10, 3},
         {2, 6, 12, 1},
@@ -82,19 +105,14 @@ int main () {
         {11, 16, 2, 14}
     };
     
-
     // Orden en el que se asignarán los trabajos
-
-    // A B C D
-    vector<int> ordenA = {0, 1, 2, 3};
-
-    // B C D A
-    vector<int> ordenB = {1, 2, 3, 0};
+    vector<int> ordenA = {0, 1, 2, 3}; // A B C D
+    vector<int> ordenB = {1, 2, 3, 0}; // B C D A
 
     // Asignación de trabajos
-    cout << "-----Empezando por A-----" << endl;
-    optimizacion(tabla, ordenA);
-    cout << "-----Empezando por B-----" << endl;
-    optimizacion(tabla, ordenB);
+    cout << "-----Empezando por A (0)-----" << endl;
+    asignarTrabajos(tabla, ordenA);
+    cout << "-----Empezando por B (1)-----" << endl;
+    asignarTrabajos(tabla, ordenB);
 }
 
