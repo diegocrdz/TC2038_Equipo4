@@ -272,6 +272,8 @@ void mergeSort(vector<Conexion>& conexiones) {
     sort(0, conexiones.size() - 1, conexiones);
 }
 
+// Parte 1. Forma óptima de cablear todas las colonias con fibra (lista de arcos de la forma (A,B))
+
 /*
 Kruskal
 Algoritmo para encontrar el árbol de expansión mínima (MST) y su costo total
@@ -337,6 +339,8 @@ pair<vector<Conexion>, int> kruskal(vector<vector<int>> m) {
     return { T, totalCost };
 }
 
+// Parte 2. Ruta a seguir por el personal que reparte correspondencia
+
 /*
 Función recursiva del agente viajero para explorar vecinos con branch and bound
 Explora las ramas e ignora las que no cumplan con el mejor costo que se ha encontrado
@@ -373,7 +377,7 @@ void explorarVecinos(
     for (int i = 0; i < m.size(); i++) {
 
         // Si el nodo no ha sido visitado y tiene conexión a otro nodo
-        if (!visitado[i] && m[nodoActual][i] != 0) {
+        if (!visitado[i] && m[nodoActual][i] > 0 && m[nodoActual][i] < INT_MAX) {
 
             // Obtener el costo hacia el nuevo nodo
             int nuevoCosto = costoActual + m[nodoActual][i];
@@ -438,7 +442,7 @@ pair<vector<int>, int> agenteViajero(vector<vector<int>> m) {
     return {mejorCaminoTotal, mejorCostoTotal};
 }
 
-// Parte 3. Distancia al servidor más cercano
+// Parte 3. Distancia al servidor más cercano 
 
 /*
 Función para comparar las coordenadas y encontrar la distancia mínima
@@ -505,8 +509,28 @@ int main() {
     // Leer datos del archivo
     DatosArchivo datos = leerArchivo("entrada.txt");
 
+    // Imprimir datos leidos
+    cout << endl;
+    cout << "------------------ Datos leídos del archivo ------------------" << endl;
+    cout << "Número de colonias: " << datos.numColonias << endl;
+    cout << "Matriz de distancias:" << endl;
+    for (int i = 0; i < datos.numColonias; i++) {
+        for (int j = 0; j < datos.numColonias; j++) {
+            cout << datos.matrizDistancias[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << "Coordenadas de las centrales:" << endl;
+    for (int i = 0; i < datos.numColonias; i++) {
+        cout << "(" << datos.coordenadas[i].first << ", " << datos.coordenadas[i].second << ")" << endl;
+    }
+    cout << "--------------------------------------------------------------" << endl;
+    cout << endl;
+
     // Definir nombres para las colonias
-    vector<string> nombresColonias = {"A", "B", "C", "D"};
+    vector<string> nombresColonias = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
+                                      "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
+                                      "U", "V", "W", "X", "Y", "Z"};
 
     // Parte 1. Forma óptima de cablear todas las colonias con fibra (lista de arcos de la forma (A,B))
     // Kruskal
@@ -568,7 +592,10 @@ int main() {
     cout << "-------------- Parte 3: Distancia al servidor más cercano ------------" << endl;
     cout << endl;
 
-    pair<int, int> punto = make_pair(400, 200); // Punto de referencia
+    cout << "Introduce las coordenadas de tu casa (formato: 'x y'): ";
+    int xCasa, yCasa;
+    cin >> xCasa >> yCasa;
+    pair<int, int> punto = make_pair(xCasa, yCasa); // Coordenadas de la casa
     vector<tuple<int, int, int, int, double>> resultado = cpp(datos.coordenadas, punto);
 
     cout << "Casa     : "<< "(" << punto.first << ", " << punto.second << ")" << endl;
