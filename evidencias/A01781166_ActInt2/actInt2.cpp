@@ -10,9 +10,19 @@ using namespace std;
 NOTAS IMPORTANTES PARA LA EJECUCIÓN DEL CÓDIGO
 1. En caso de que la matriz de adyacencia tenga un valor infinito, este debe ser representado como INT_MAX
 2. Se espera el siguiente formato en el archivo de entrada.txt:
-    - Numero de colonias
-    - Matriz de adyacencia 
+    - Numero de colonias en el primer renglón. Ejemplo:
+        5
+    - Matriz de adyacencia en el siguiente formato:
+        0 x x x x
+        x 0 x x x
+        x x 0 x x
+        x x x 0 x
+        x x x x 0
     - Coordenadas de las centrales en el formato (x, y)
+        (x1, y1)
+        (x2, y2)
+        (x3, y3)
+        ...
 */
 
 /*
