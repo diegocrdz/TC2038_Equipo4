@@ -1,0 +1,92 @@
+Tecnológico de Monterrey, Campus Santa Fe
+
+Análisis y diseño de algoritmos avanzados (Gpo 602)
+
+E2. Actividad Integradora 2
+
+Contribuciones del Equipo
+
+- Creación de los algoritmos para la solución del reto
+
+    Junto con Diego y Lorena, realicé los códigos de kruskal, agente viajero y pares cortos para poder 
+    adaptarlos al reto e implementarlos en la solución del mismo.
+
+- Adaptación de códigos al reto
+
+    Junto con Diego y Lorena, realicé la adaptación y corrección necesaria de los códigos para la 
+    funcionalidad correcta de estos dentro del reto.
+	
+- Investigación de complejidades 
+
+    Junto con Diego y Lorena, realicé la investigación de complejidades para kruskal, agente viajero 
+    y pares cortos.
+	
+- Pruebas de ejecución y archivos de pruebas
+
+    Junto con Diego y Lorena, realicé archivos de prueba para probar la funcionalidad  del código. 
+    Para esto, probamos diferentes tipos de entradas y tamaños de matrices que pudieran representar 
+    casos límite o errores en el código.
+
+- Colaboración en documento de reflexión
+
+    Junto con Diego y Lorena , investigué las complejidades de los algoritmos implementados en 
+    la evidencia.
+
+Diego Córdova Rodríguez, A01781166
+
+- Lectura de archivos
+
+    Implementé la lectura de los archivos de entrada para obtener la cantidad de colonias, 
+    la matriz de distancias entre ellas y las coordenadas de cada colonia.
+
+- Adaptación de algoritmo Kruskal al reto
+
+    Inicialmente, programamos Kruskal para que funcionara con una clase a parte, por lo que 
+    tuve que adaptarlo para que funcionara como función independiente en la evidencia. 
+    Para esto, mantuve la estructura original del algoritmo, pero adapté las entradas 
+    y salidas para que coincidieran con lo que se pedía. Mantuve las clases de Conexiones 
+    y CycleDetector, ya que eran necesarias para el funcionamiento del algoritmo.
+
+- Pruebas de ejecución y archivos de pruebas
+
+    Junto con Lorena y Aquiba, realicé archivos de prueba para probar la funcionalidad 
+    del código. Para esto, probamos diferentes tipos de entradas y tamaños de matrices 
+    que pudieran representar casos límite o errores en el código.
+
+- Investigación de complejidades 
+
+    Junto con Aquiba y Lorena, realicé la investigación de complejidades para kruskal, 
+    agente viajero y pares cortos.
+
+- Colaboración en documento de reflexión
+
+    Junto con el resto del equipo, investigué las complejidades de los algoritmos 
+    implementados en la evidencia.
+
+Lorena Estefanía Chewtat Torres, A01785378
+
+- Creación de los algoritmos usados antes de adaptarlos
+
+    Junto con Aquiba y Diego, hicimos el pseudocódigo, pensamos en la lógica de los algoritmos 
+    usados y los programamos durante clase. Este trabajo nos ayudó bastante debido a que solo 
+    teníamos que adaptarlos al mismo programa y lectura del archivo.
+
+- Adaptación del algoritmo del agente viajero al reto
+
+	En esta parte del proyecto colaboré en la implementación y adaptación del algoritmo del agente 
+    viajero. Originalmente estaba pensado para hacerlo con un solo nodo inicial que tu le pasabas, 
+    pero lo modifiqué para que evaluará todas las colonias como posibles puntos de partida y así 
+    obtuviera la ruta con costo más bajo de todas las rutas, y asi garantizara la obtención de la 
+    mejor ruta completa para el recorrido.
+
+- Pruebas de ejecución y archivos de pruebas
+
+    Junto con Diego y Aquiba, realicé archivos de prueba para probar la funcionalidad  del código. 
+    Para esto, probamos diferentes archivos de entrada que pudieran dar errores o dar respuestas erróneas. 
+    Asimismo, le pedimos a nuestros compañeros sus archivos de entrada para poder probar todas las 
+    posibilidades.
+
+- Colaboración en documento de reflexión
+
+    Junto con Diego y Aquiba, investigué sobre las complejidades de los algoritmos usados y redactamos 
+    el documento de reflexión.
