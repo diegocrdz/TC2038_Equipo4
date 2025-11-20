@@ -7,6 +7,15 @@
 using namespace std;
 
 /*
+NOTAS IMPORTANTES PARA LA EJECUCIÓN DEL CÓDIGO
+1. En caso de que la matriz de adyacencia tenga un valor infinito, este debe ser representado como INT_MAX
+2. Se espera el siguiente formato en el archivo de entrada.txt:
+    - Numero de colonias
+    - Matriz de adyacencia 
+    - Coordenadas de las centrales en el formato (x, y)
+*/
+
+/*
 E1. Actividad Integradora 2
 
 Descripción:
